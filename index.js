@@ -9,4 +9,11 @@ let testDiagonalDifference = () => {
     console.log('testDiagonalDifference: success');
 }
 
-testDiagonalDifference();
+let testStaircase = () => {
+    let staircase = require('./staircase');
+    let result = staircase.createStaircase(4);
+}
+
+testStaircase();
+
+//testDiagonalDifference();
