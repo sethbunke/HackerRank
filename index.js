@@ -12,6 +12,12 @@ let testDiagonalDifference = () => {
 let testStaircase = () => {
     let staircase = require('./staircase');
     let result = staircase.createStaircase(4);
+    assert(result[0], '   #');
+    assert(result[1], '  ##');
+    assert(result[2], ' ###');
+    assert(result[3], '####');
+    assert(result.length, 4);
+    console.log('testStaircase: success');
 }
 
 testStaircase();
