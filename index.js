@@ -20,6 +20,17 @@ let testStaircase = () => {
     console.log('testStaircase: success');
 }
 
-testStaircase();
+let testPlusMinus = () => {
+    let plusMinus = require('./plusMinus');
+    let result = plusMinus.calculatePercentages([-4,3,-9,0,4,1]);
+    assert(result['negative'], 0.333333);
+    assert(result['positive'], 0.500000);
+    assert(result['zero'], 0.166667);    
+    console.log('plusMinus: success');
+}
+
+testPlusMinus();
+
+//testStaircase();
 
 //testDiagonalDifference();
