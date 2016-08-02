@@ -29,7 +29,23 @@ let testPlusMinus = () => {
     console.log('plusMinus: success');
 }
 
-testPlusMinus();
+
+//07:05:45PM
+
+let testTwentyfourHourClock = () => {
+    let twentyfourHourClock = require('./twentyfourHourClock');
+    let result1 = twentyfourHourClock.convert('07:05:45PM'); 
+    assert('19:05:45', result1);  
+    let result2 = twentyfourHourClock.convert('08:33:22AM'); 
+    assert('08:33:22', result2);  
+    let result3 = twentyfourHourClock.convert('12:44:11AM'); 
+    assert('00:44:11', result3);
+    console.log('plusMinus: success');
+}
+
+testTwentyfourHourClock();
+
+//testPlusMinus();
 
 //testStaircase();
 
