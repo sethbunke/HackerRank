@@ -6,7 +6,7 @@ let getCount = (inputString, stringToFind, nLetters) => {
     let countInFullString = Math.floor(nLetters / inputLength);
     let remainder = nLetters % inputLength;
     let countInSubstring = countOccurrencesInString(inputString.substring(0, remainder), stringToFind);
-    return countInFullString + countInFullString;
+    return (countPerString * countInFullString) + countInSubstring;
 };
 
 let countOccurrencesInString = (inputString, stringToFind) => {

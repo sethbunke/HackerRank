@@ -48,6 +48,8 @@ let testRepeatedString = () => {
     let repeatedString = require('./repeatedString');
     let result1 = repeatedString.getCount('aba','a',10);   
     assert(7, result1);  
+    //let result2 = repeatedString.getCount('aba','c',10);   
+    //assert(0, result2);  
 }
 
 testRepeatedString();
