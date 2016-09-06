@@ -47,7 +47,7 @@ let testTwentyfourHourClock = () => {
 let testRepeatedString = () => {
     let repeatedString = require('./repeatedString');
     let result1 = repeatedString.getCount('aba','a',10);   
-    assert(7, result3);  
+    assert(7, result1);  
 }
 
 testRepeatedString();
