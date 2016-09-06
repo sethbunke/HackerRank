@@ -1,16 +1,16 @@
 'use strict';
 
-let getCount = (inputString, stringToFind, nLetters) => {     
-    let inputLength = inputString.length;
-    let countPerString = countOccurrencesInString(inputString, stringToFind); 
-    let countInFullString = Math.floor(nLetters / inputLength);
-    let remainder = nLetters % inputLength;
-    let countInSubstring = countOccurrencesInString(inputString.substring(0, remainder), stringToFind);
+const getCount = (inputString, stringToFind, nLetters) => {     
+    const inputLength = inputString.length;
+    const countPerString = countOccurrencesInString(inputString, stringToFind); 
+    const countInFullString = Math.floor(nLetters / inputLength);
+    const remainder = nLetters % inputLength;
+    const countInSubstring = countOccurrencesInString(inputString.substring(0, remainder), stringToFind);
     return (countPerString * countInFullString) + countInSubstring;
 };
 
-let countOccurrencesInString = (inputString, stringToFind) => {
-    var regExp = new RegExp(stringToFind, 'gi');
+const countOccurrencesInString = (inputString, stringToFind) => {
+    const regExp = new RegExp(stringToFind, 'gi');
     return (inputString.match(regExp) || []).length;
 }
 
