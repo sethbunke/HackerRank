@@ -43,7 +43,16 @@ let testTwentyfourHourClock = () => {
     console.log('plusMinus: success');
 }
 
-testTwentyfourHourClock();
+
+let testRepeatedString = () => {
+    let repeatedString = require('./repeatedString');
+    let result1 = repeatedString.getCount('aba','a',10);   
+    assert(7, result3);  
+}
+
+testRepeatedString();
+
+//testTwentyfourHourClock();
 
 //testPlusMinus();
 
