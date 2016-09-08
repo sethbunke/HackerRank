@@ -3,6 +3,9 @@
 const getCount = (inputString, stringToFind, nLetters) => {     
     const inputLength = inputString.length;
     const countPerString = countOccurrencesInString(inputString, stringToFind); 
+    if (countPerString === 0) {
+        return 0;
+    }
     const countInFullString = Math.floor(nLetters / inputLength);
     const remainder = nLetters % inputLength;
     const countInSubstring = countOccurrencesInString(inputString.substring(0, remainder), stringToFind);
