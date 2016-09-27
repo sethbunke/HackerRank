@@ -52,7 +52,15 @@ let testRepeatedString = () => {
     assert(0, result2);  
 }
 
-testRepeatedString();
+let testArrayLeftRotation = () => {
+    let arrayLeftRotation = require('./arrayLeftRotation');
+    let result1 = arrayLeftRotation.rotateArrayLeft([1,2,3,4,5], 4);   
+    assert([5,1,2,3,4], result1);      
+}
+
+testArrayLeftRotation();
+
+//testRepeatedString();
 
 //testTwentyfourHourClock();
 
