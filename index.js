@@ -54,8 +54,21 @@ let testRepeatedString = () => {
 
 let testArrayLeftRotation = () => {
     let arrayLeftRotation = require('./arrayLeftRotation');
-    let result1 = arrayLeftRotation.rotateArrayLeft([1,2,3,4,5], 4);   
-    assert([5,1,2,3,4], result1);      
+    // let result1 = arrayLeftRotation.rotateArrayLeft([1,2,3,4,5], 4);   
+    // assert([5,1,2,3,4], result1); 
+
+    let data2 = [431, 397, 149, 275, 556, 362, 852, 789, 601, 357, 516, 575, 670, 507, 127, 888, 284, 405, 806, 27, 495, 879, 976, 467, 342, 356, 908, 750, 769, 947, 425, 643, 754, 396, 653, 595, 108, 75, 347, 394, 935, 252, 683, 966, 553, 724, 629, 567, 93, 494, 693, 965, 328, 187, 728, 389, 70, 288, 509, 252, 449];
+    let k2 = 48;     
+
+    let result2 = arrayLeftRotation.rotateArrayLeft(data2, k2);   
+    assert([5,1,2,3,4], result1); 
+
+    //let result = rotateArrayLeft(a, k);
+    let output = '';
+    for (let i = 0; i < result1.length; i++){
+        output += result1[i] + ' ';
+    }
+    console.log(output);
 }
 
 testArrayLeftRotation();
