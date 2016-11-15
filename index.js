@@ -73,7 +73,16 @@ let testArrayLeftRotation = () => {
     console.log(output);
 }
 
-testArrayLeftRotation();
+let testCompareHasTables = () => {
+    let compareHashTables = require('./compareHashTables.js');
+}
+
+
+testCompareHasTables();
+
+//testArrayLeftRotation();
+
+
 
 //testRepeatedString();
 
