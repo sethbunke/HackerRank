@@ -73,10 +73,26 @@ let testArrayLeftRotation = () => {
     console.log(output);
 }
 
-let testCompareHasTables = () => {
-    let compareHashTables = require('./compareHashTables.js');
-}
+// let testCompareHasTables = () => {
+//     let compareHashTables = require('./compareHashTables.js');
+// }
 
+let testCompareHasTables = function() {
+    let compareHashTables = require('./compareHashTables.js');
+
+    let arr1 = 'give me one grand today night'.split(' ');
+    let arr2 = 'give one grand today'.split(' ');    
+    let result1 = compareHashTables.compare(arr1, arr2)
+
+    let arr3 = 'give one X grand today'.split(' ');
+    let result2 = compareHashTables.compare(arr1, arr3);
+
+    let arr4 = 'give one X grand today'.split(' ');
+    let arr5 = 'Give'.split(' ');
+    let result3 = compareHashTables.compare(arr4, arr5);
+
+    //throw Error('counts off');
+}
 
 testCompareHasTables();
 
